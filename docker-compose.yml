@@ -13,6 +13,7 @@ services:
 
 networks:
   cache-network:
+    name: cache-network
     driver: bridge
 
 volumes:
