@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  run-up-redis:
+    image: redis
+    container_name: run-up-cache
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - cache-network
+
+networks:
+  cache-network:
+    driver: bridge
+
+volumes:
+  redis-data:
