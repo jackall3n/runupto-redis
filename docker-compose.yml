@@ -14,6 +14,7 @@ services:
 networks:
   cache-network:
     driver: bridge
+    name: cache-network
 
 volumes:
   redis-data:
