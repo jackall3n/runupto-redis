@@ -4,6 +4,7 @@ services:
   run-up-redis:
     image: redis
     container_name: run-up-redis
+    restart: always
     ports:
       - "6379:6379"
     volumes:
